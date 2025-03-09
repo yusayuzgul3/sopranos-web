@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Sopranos Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <meta name="description" content="Explore our delicious menu at Sopranos Pizza. Hand-tossed dough, fresh ingredients, and authentic flavors.">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sopranos Pizza Logo" loading="lazy">
+                <span class="brand-name">Sopranos Pizza</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn login-btn">Log In</a>
+                <a href="menu.html" class="btn order-btn">Order Now</a>
+            </div>
+            <div class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="menu-header">
+        <div class="header-image">
+            <img src="images/menu-header.jpg" alt="Menu Header Image" loading="lazy">
+        </div>
+        <div class="header-text">
+            <h1>Menu</h1>
+            <p class="welcome-message">Discover our delicious offerings, crafted with love and tradition.</p>
+        </div>
+    </header>
+
+    <!-- Category Buttons -->
+    <section class="category-buttons">
+        <button class="category-btn active" data-target="appetizers">Appetizers</button>
+        <button class="category-btn" data-target="salads">Salads</button>
+        <button class="category-btn" data-target="pizzas">Pizzas</button>
+        <button class="category-btn" data-target="specialty-pizzas">Specialty Pizzas</button>
+        <button class="category-btn" data-target="pasta">Pasta</button>
+        <button class="category-btn" data-target="burgers">Burgers</button>
+        <button class="category-btn" data-target="subs-sandwiches">Subs & Sandwiches</button>
+        <button class="category-btn" data-target="desserts">Desserts</button>
+        <button class="category-btn" data-target="kids-menu">Kids Menu</button>
+        <button class="category-btn" data-target="beverages">Beverages</button>
+    </section>
+
+    <!-- Menu Sections -->
+    <section id="appetizers" class="menu-section">
+        <div class="menu-item">
+            <img src="images/chicken-tenders.jpg" alt="Chicken Tenders" loading="lazy">
+            <h3>Chicken Tenders</h3>
+            <p>Choice of Barbecue, Honey Mustard, or Ranch.</p>
+            <p class="price">$9.49</p>
+            <div class="options">
+                <label for="chicken-tenders-quantity">Quantity:</label>
+                <input type="number" id="chicken-tenders-quantity" min="1" value="1">
+            </div>
+            <button class="add-to-cart-btn" data-name="Chicken Tenders" data-price="9.49">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/buffalo-chicken-tenders.jpg" alt="Buffalo Chicken Tenders" loading="lazy">
+            <h3>Buffalo Chicken Tenders</h3>
+            <p>Breaded and fried chicken breast topped in Buffalo Sauce.</p>
+            <p class="price">$9.99</p>
+            <div class="options">
+                <label for="buffalo-chicken-tenders-quantity">Quantity:</label>
+                <input type="number" id="buffalo-chicken-tenders-quantity" min="1" value="1">
+            </div>
+            <button class="add-to-cart-btn" data-name="Buffalo Chicken Tenders" data-price="9.99">Add to Cart</button>
+        </div>
+
+        <!-- Add more appetizers here -->
+    </section>
+
+    <section id="salads" class="menu-section" style="display: none;">
+        <!-- Add salads here -->
+    </section>
+
+    <section id="pizzas" class="menu-section" style="display: none;">
+        <!-- Add pizzas here -->
+    </section>
+
+    <!-- Add more sections for other categories -->
+
+    <!-- View Cart Button -->
+    <button id="view-cart-btn">View Cart</button>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: $0.00</p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>

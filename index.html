@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - Sopranos Pizza</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- Add Google Fonts Link for Playfair Display -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+        <meta name="description" content="Sopranos Pizza - Hand-tossed dough made in-house daily. Order now and join our rewards program!">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sopranos Pizza Logo" loading="lazy">
+                <span class="brand-name">Sopranos Pizza</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn login-btn">Log In</a>
+                <a href="menu.html" class="btn order-btn">Order Now</a>
+            </div>
+            <div class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video -->
+    <section class="hero">
+        <video autoplay muted loop class="background-video" aria-label="Background video of delicious pizza">
+            <source src="videos/pizza-video.mp4" type="video/mp4">
+            Your browser does not support the video tag. <a href="videos/pizza-video.mp4">Download the video</a>.
+        </video>
+        <div class="hero-buttons">
+            <a href="menu.html" class="btn order-now">Order Now</a>
+            <a href="https://www.doordash.com/store/sopranos-pizza" target="_blank" rel="noopener noreferrer" class="btn doordash">
+                <img src="images/doordash-logo.png" alt="Order on DoorDash" loading="lazy">
+                <span>DoorDash</span>
+            </a>
+            <a href="https://www.ubereats.com/store/sopranos-pizza" target="_blank" rel="noopener noreferrer" class="btn ubereats">
+                <img src="images/ubereats-logo.png" alt="Order on UberEats" loading="lazy">
+                <span>UberEats</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Hand-Tossed Dough Section -->
+<section class="hand-tossed">
+    <div class="hand-tossed-text">
+        <h2>Hand-Tossed Dough</h2>
+        <p class="body-text">Made In-house Daily</p>
+        <a href="menu.html" class="btn view-menu-btn">View Menu</a>
+    </div>
+    <div class="hand-tossed-image">
+        <img src="images/pizza-trio.jpg" alt="Hand-Tossed Dough" loading="lazy">
+    </div>
+</section>
+
+<!-- Join Our Rewards Section -->
+<section class="hand-tossed rewards">
+    <div class="hand-tossed-text">
+        <h2>Join Our Rewards</h2>
+        <p class="body-text">Earn points on every order.</p>
+        <a href="login.html" class="btn view-menu-btn">Sign Up</a>
+    </div>
+    <div class="hand-tossed-image">
+        <img src="images/rewards.png" alt="Join Our Rewards" loading="lazy">
+    </div>
+</section>
+
+<!-- What’s Cookin’ Section -->
+<section class="hand-tossed whats-cookin">
+    <div class="hand-tossed-text">
+        <h2>What’s Cookin’</h2>
+        <p class="body-text">Check out our current specials.</p>
+        <a href="specials.html" class="btn view-menu-btn">See Specials</a>
+    </div>
+    <div class="hand-tossed-image">
+        <img src="images/whats-cookin.jpg" alt="What's Cookin'" loading="lazy">
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Footer Logo and Brand Name -->
+        <div class="footer-logo">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sopranos Pizza Logo" loading="lazy">
+                <span class="brand-name">Sopranos Pizza</span>
+            </a>
+            <p class="footer-text">Hand-tossed dough made in-house daily. Order now and join our rewards program!</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get the latest updates and special offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Sopranos Pizza. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
